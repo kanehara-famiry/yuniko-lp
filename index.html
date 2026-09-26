@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>無料鑑定 ｜ ゆにこちゃん｜星よみ屋</title>
+  <link rel="icon" type="image/png" href="yuniko-icon.png">
+  <link rel="apple-touch-icon" href="yuniko-icon.png">
+  <meta name="description" content="星よみ屋ゆにこちゃんの無料鑑定。西洋占星術・四柱推命・タロット・霊視。星は、いつもあなたの味方。まだ見ぬ可能性を、いっしょに。">
+  <meta property="og:title" content="ゆにこちゃん｜星よみ屋">
+  <meta property="og:description" content="星は、いつもあなたの味方。まだ見ぬ可能性を、いっしょに。">
+  <meta property="og:image" content="/yuniko-icon.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-icon"><img src="yuniko-icon.png" alt="ゆにこちゃん"></div>
+      <p class="hero-label">星よみ屋</p>
+      <h1 class="hero-name">ゆにこちゃん</h1>
+      <p class="hero-sub">西洋占星術・四柱推命・タロット・霊視</p>
+      <div class="hero-divider"></div>
+      <p class="hero-copy">
+        <span class="ph">星は、</span><span class="ph">いつもあなたの味方。</span><br>
+        <span class="ph">まだ見ぬ</span><span class="ph">可能性を、</span><span class="ph">いっしょに。</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">無料鑑定について</h2>
+      <p class="about-text">
+        <span class="ph">ゆにこちゃんだよ。</span><span class="ph">ちょっとおせっかいな、</span><span class="ph">占い師です。</span><br><br>
+        <span class="ph">西洋占星術で</span><span class="ph">生まれ持った</span><span class="ph">星の性質と</span><span class="ph">巡りを読み、</span><span class="ph">四柱推命で</span><span class="ph">運気の転換期を</span><span class="ph">見つけて、</span><span class="ph">タロットと霊視で</span><span class="ph">占術では</span><span class="ph">映しきれない</span><span class="ph">心の深いところを</span><span class="ph">読み取るよ。</span><span class="ph">この三つを</span><span class="ph">重ねて、</span><span class="ph">あなたの今を視るの。</span><br><br>
+        <span class="ph">無料鑑定ではね、</span><span class="ph">あなたが</span><span class="ph">今その状況にいる</span><span class="ph"><strong>必然の理由</strong>を</span><span class="ph">教えるよ。</span><span class="ph">甘い嘘は</span><span class="ph">言わないの。</span><span class="ph">でも、</span><span class="ph">突き放したりも</span><span class="ph">しないからね。</span>
+      </p>
+
+      <div class="method-list">
+        <div class="method-item">
+          <span class="method-name">西洋占星術</span>
+          <span class="method-desc">生まれ持った星の性質と巡りを読む</span>
+        </div>
+        <div class="method-item">
+          <span class="method-name">四柱推命</span>
+          <span class="method-desc">運気の流れと転換期を特定する</span>
+        </div>
+        <div class="method-item">
+          <span class="method-name">タロット・霊視</span>
+          <span class="method-desc">心の奥と、見えない流れを読み取る</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="form-section" id="form">
+    <div class="container">
+      <h2 class="section-title">無料鑑定 お申し込み</h2>
+      <p class="form-note"><span class="ph">入力された情報をもとに、</span><span class="ph">ゆにこちゃんが</span><span class="ph">鑑定書を送るよ。</span><br><span class="ph">メールアドレスに</span><span class="ph">直接届けるからね。</span></p>
+
+      <form class="kantei-form" id="kanteiForm">
+
+        <!-- ボット対策のハニーポット。人には見えない・入力不要。埋まっていたらサーバ側で破棄する。 -->
+        <input type="text" name="hp_field" tabindex="-1" autocomplete="off" aria-hidden="true"
+               style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;">
+
+        <div class="form-group">
+          <label for="name">お名前<span class="required">必須</span></label>
+          <p class="field-hint">ニックネームでも構いません</p>
+          <input type="text" id="name" name="name" placeholder="例：みなみ" required>
+        </div>
+
+        <div class="form-group">
+          <label>生年月日<span class="required">必須</span></label>
+          <div class="birthday-row">
+            <div class="birthday-field">
+              <select name="birth_year" required>
+                <option value="">年</option>
+              </select>
+              <span class="unit">年</span>
+            </div>
+            <div class="birthday-field">
+              <select name="birth_month" required>
+                <option value="">月</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <span class="unit">月</span>
+            </div>
+            <div class="birthday-field">
+              <select name="birth_day" required>
+                <option value="">日</option>
+              </select>
+              <span class="unit">日</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>性別<span class="required">必須</span></label>
+          <div class="gender-row">
+            <label class="gender-option">
+              <input type="radio" name="gender" value="女性" required>
+              <span>女性</span>
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" value="男性">
+              <span>男性</span>
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" value="回答したくない">
+              <span>回答したくない</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="concern">今一番気になっていること<span class="required">必須</span></label>
+          <p class="field-hint">恋愛・仕事・家族・お金・健康など、何でも</p>
+          <textarea id="concern" name="concern" rows="4" placeholder="例：好きな人がいるのに、なかなか一歩を踏み出せなくて。相手が今わたしをどう思っているのか知りたいです。" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="future">今後どうなりたいか<span class="required">必須</span></label>
+          <p class="field-hint">理想の状態を教えてください</p>
+          <textarea id="future" name="future" rows="4" placeholder="例：自分に自信を持って、好きな人と自然に笑い合える関係になりたい。" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス<span class="required">必須</span></label>
+          <p class="field-hint">鑑定書をお送りします</p>
+          <input type="email" id="email" name="email" placeholder="例：your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email_confirm">メールアドレス（確認用）<span class="required">必須</span></label>
+          <p class="field-hint">もう一度入力してください（貼り付け不可）</p>
+          <input type="email" id="email_confirm" name="email_confirm" placeholder="例：your@email.com" required autocomplete="off" onpaste="return false;">
+        </div>
+
+        <!-- パートナー情報（任意） -->
+        <div class="optional-section">
+          <button type="button" class="toggle-optional" id="togglePartner">
+            <span>＋ パートナーや気になる人がいる場合（任意）</span>
+          </button>
+          <div class="optional-fields" id="partnerFields" style="display:none;">
+            <div class="form-group">
+              <label for="partner_name">相手のお名前</label>
+              <input type="text" id="partner_name" name="partner_name" placeholder="例：ゆうと">
+            </div>
+            <div class="form-group">
+              <label>相手の生年月日</label>
+              <div class="birthday-row">
+                <div class="birthday-field">
+                  <select name="partner_year">
+                    <option value="">年</option>
+                  </select>
+                  <span class="unit">年</span>
+                </div>
+                <div class="birthday-field">
+                  <select name="partner_month">
+                    <option value="">月</option>
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                  </select>
+                  <span class="unit">月</span>
+                </div>
+                <div class="birthday-field">
+                  <select name="partner_day">
+                    <option value="">日</option>
+                  </select>
+                  <span class="unit">日</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="partner_relation">関係性</label>
+              <input type="text" id="partner_relation" name="partner_relation" placeholder="例：職場で片思いしている先輩">
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-area">
+          <p class="submit-note">送信後、数日以内にメールをお送りします。<br>迷惑メールフォルダもご確認ください。</p>
+          <p class="submit-note" style="margin-top:8px;">※ 無料鑑定はお一人様1回限りです</p>
+          <!-- 受信サーバーを繋ぐまでのトライアル用の表示。接続後はこの1行を消すだけでOK。 -->
+          <p class="trial-note" id="trialNote">※ テスト公開中：いまは受信の接続前です（送信テストのみ）</p>
+          <button type="submit" class="submit-btn">鑑定書を申し込む</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Thank you (hidden) -->
+  <div class="thankyou" id="thankyou" style="display:none;">
+    <div class="thankyou-inner">
+      <div class="hero-icon" style="margin:0 auto 24px;"><img src="yuniko-icon.png" alt="ゆにこちゃん"></div>
+      <h2>申し込みを受け取ったよ</h2>
+      <p>視えたことを、そのまま書いて送るね。<br>ちょっとだけ、待っててね。</p>
+      <p class="thankyou-sign">ゆにこちゃん</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© ゆにこちゃん｜星よみ屋</p>
+    <p style="margin-top:8px;"><a href="privacy.html" style="color:rgba(255,255,255,0.4);font-size:11px;text-decoration:none;letter-spacing:0.1em;">特定商取引法に基づく表記・プライバシーポリシー</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
